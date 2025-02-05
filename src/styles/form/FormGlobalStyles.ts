@@ -35,3 +35,17 @@ export const Button = styled(ButtonStyle)`
     color: ${(props) => props.theme['neutral-1']};
   }
 `
+
+export const SendFormButton = styled(ButtonStyle)`
+  background-color: ${(props) => props.theme.primary};
+
+  width: 100%;
+
+  &:hover {
+    background-color: ${(props) => props.theme['neutral-2']};
+
+    border: 2px solid ${(props) => props.theme['neutral-2']};
+
+    color: ${(props) => props.theme['neutral-1']};
+  }
+`
