@@ -10,7 +10,7 @@ import {
 import { SendFormButton } from '../../styles/form/FormGlobalStyles'
 
 import { DrawData } from '../../@types/draw'
-import { galleryRoutes } from '../../services/GalleryRoutes'
+import { galleryService } from '../../services/GalleryService'
 import { Loading } from '../../components/Loading'
 
 export function MainGallery() {
@@ -31,7 +31,7 @@ export function MainGallery() {
   const PAGE_SIZE = 15
 
   useEffect(() => {
-    const draws = galleryRoutes.loadGallery().sort((a, b) => b.year - a.year)
+    const draws = galleryService.loadGallery().sort((a, b) => b.year - a.year)
 
     setDrawsList(draws)
 

@@ -1,4 +1,4 @@
-export const galleryRoutes = {
+export const galleryService = {
   loadGallery: function () {
     const images = import.meta.glob<Record<string, { default: string }>>(
       '../assets/main_gallery/**/*.{png,jpg,jpeg,svg}',
