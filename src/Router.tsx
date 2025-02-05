@@ -1,5 +1,12 @@
-import { /* Route, */ Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { DefaultLayout } from './layouts/DefaultLayout'
 
 export function Router() {
-  return <Routes>{/* <Route index element={<Home />} /> */}</Routes>
+  return (
+    <Routes>
+      <Route path="/" element={<DefaultLayout />}>
+        {/* <Route index element={<Home />} /> */}
+      </Route>
+    </Routes>
+  )
 }
